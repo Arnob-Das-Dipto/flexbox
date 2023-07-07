@@ -1,0 +1,263 @@
+
+/* 
+    Template Name: FlexBox Project
+    Author Name: Arnob Das Dipto
+    Description: Portfolio WebPage
+
+    Index 
+
+    ----
+    01. Reset CSS
+    02. Header CSS
+    03. Banner CSS
+    04. About CSS
+    05. Service CSS
+    06. Gallery CSS
+    07. Contact CSS
+    08. Footer CSS
+*/
+
+/* 01. Reset CSS */
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@400;500;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Chivo Mono', monospace;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+img {
+    max-width: 100%;
+}
+ul {
+    list-style: none;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.section-title h4 {
+    text-transform: capitalize;
+    font-size: 28px;
+    font-weight: 700;
+}
+.section-title p {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 12px;
+}
+
+/* 02. Header CSS */
+.header-area {
+    padding: 20px 0;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo a {
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.menu ul {
+    display: flex;
+}
+.menu ul li a {
+    display: block;
+    text-transform: capitalize;
+    font-size: 17px;
+    margin-left: 24px;
+    transition: .3s;
+}
+.menu ul li a:hover {
+    color: tomato;
+}
+
+/* 03. Banner CSS */
+.banner img {
+    max-width: 100%;
+    border: 1px dashed #333;
+    padding: 4px;
+}
+
+/* 04. About CSS */
+.about-area {
+    padding: 80px 0;
+}
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.single-about {
+    flex-basis: 370px;
+    text-align: center;
+    border: 4px dashed #ddd;
+    padding: 20px;
+    transition: .3s;
+}
+.single-about i {
+    background-color: tomato;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 24px;
+    color: #333;
+    border: 1px solid transparent;
+    transition: .3s;
+}
+.single-about h4 {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.single-about:hover {
+    color: tomato;
+}
+.single-about:hover i {
+    background-color: transparent;
+    border-color: tomato;
+    border-radius: 0%;
+}
+
+/* 05. Service CSS */
+.services-area {
+    padding: 80px 0;
+    background-color: #ddd;
+}
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.single-service {
+    flex-basis: 370px;
+    background-color: #fff;
+    padding: 20px;
+}
+.single-service h4 {
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: dotted;
+    text-align: center;
+    background-color: teal;
+    padding: 20px 0;
+}
+.single-service p {
+    line-height: 24px;
+    margin: 15px 0;
+}
+.single-service a {
+    display: inline-block;
+    background-color: tomato;
+    color: #fff;
+    padding: 8px 20px;
+    text-transform: capitalize;
+    border: 2px solid transparent;
+    transition: .3s;
+}
+.single-service a:hover {
+    background-color: transparent;
+    color: #333;
+    border-color: tomato;
+}
+
+/* 06. Gallery CSS */
+.gallery-area {
+    padding: 80px 0;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.single-gallery {
+    flex-basis: 270px;
+    margin-bottom: 30px;
+}
+.single-gallery img {
+    border: 1px solid #ddd;
+    padding: 3px;
+    border-radius: 7px;
+}
+
+/* 07. Contact CSS */
+.contact-area {
+    padding: 80px 0;
+    background-color: #f4f4f4;
+}
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contact-form {
+    flex-basis: 700px;
+}
+.contact-info {
+    flex-basis: 450px;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.contact-form input[type="submit"] {
+    background-color: tomato;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+}
+.single-contact {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.single-contact i {
+    background-color: tomato;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+.single-contact h4 {
+    text-transform: uppercase;
+    margin-left: 10px;
+    font-size: 18px;
+}
+.single-contact h4 span {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+}
+.single-contact h4 span.email {
+    text-transform: lowercase;
+}
+
+/* 08. Footer CSS */
+.footer-area {
+    text-align: center;
+    background-color: teal;
+    padding: 20px 0;
+}
+.footer-area p {
+    text-transform: capitalize;
+    color: #fff;
+}
